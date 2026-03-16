@@ -1,0 +1,4 @@
+srcs/**/*.o
+srcs/*.o
+minishell
+.vscode/
