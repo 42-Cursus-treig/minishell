@@ -7,7 +7,7 @@ const os    = require('os');
 const fs    = require('fs');
 
 const PORT   = process.env.PORT || 3001;
-const BINARY = path.resolve(__dirname, '..', 'minishell');
+const BINARY = path.resolve(__dirname, '..', 'bin', 'minishell');
 
 /* ── Compile minishell au démarrage ── */
 try {
