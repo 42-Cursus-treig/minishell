@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  minishell:
+    name: minishell
+    uses: 42-Cursus-treig/.github/.github/workflows/make-ci.yml@main
+    with:
+      working_directory: "."
+      apt_packages: "build-essential libreadline-dev"
+      build_target: "all"
+      test_target: ""
+      clean_target: "fclean"
