@@ -1,4 +1,6 @@
-srcs/**/*.o
-srcs/*.o
-minishell
+*.o
+*.a
+bin/
+docs/
 .vscode/
+.clang-format
