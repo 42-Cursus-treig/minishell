@@ -1,16 +1,14 @@
 #include "minishell.h"
 
-int	builtin_env(char **envp)
-{
-	int	i;
+int builtin_env(char **envp) {
+    int i;
 
-	if (!envp)
-		return (1);
-	i = 0;
-	while (envp[i])
-	{
-		printf("%s\n", envp[i]);
-		i++;
-	}
-	return (0);
+    if (!envp)
+        return (1);
+    i = 0;
+    while (envp[i]) {
+        printf("%s\n", envp[i]);
+        i++;
+    }
+    return (0);
 }
