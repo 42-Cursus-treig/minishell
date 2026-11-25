@@ -67,7 +67,7 @@ minishell/
 ### Compilation
 
 ```bash
-git clone git@github.com:tristan-reig/minishell.git minishell
+git clone git@github.com:tristan24217/minishell.git minishell
 cd minishell
 make
 ```
